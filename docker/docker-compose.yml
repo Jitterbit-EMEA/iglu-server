@@ -30,7 +30,7 @@ services:
     ports:
       - ${IGLU_PORT:-"8080:8080"}
     volumes:
-      - "../config/config.minimal.hocon:/snowplow/config/config.hocon"
+      - "/jitterbit/docker/volumes/snowplow/config/config.minimal.hocon:/snowplow/config/config.hocon"
     logging:
       options:
         max-size: 1G
